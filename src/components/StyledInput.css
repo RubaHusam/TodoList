@@ -1,0 +1,123 @@
+.input {
+  display: flex;
+  width: 90%;
+  position: relative;
+  align-items: center;
+}
+.input_box {
+  width: 100%;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 20px;
+  border: none;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px burlywood;
+}
+
+.input_box:focus {
+  box-shadow: 0 0 10px 1000px rgba(248, 222, 183, 0.604);
+  outline: none;
+}
+
+.input_submit {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin: 12px;
+  border-radius: 50px;
+  right: 0px;
+  border: none;
+  font-size: 15px;
+  background-color: burlywood;
+  color: #fff;
+  transition: 0.2s all;
+  box-shadow: inset 0 0 5px rgb(248, 222, 183);
+}
+.input_submit:hover {
+  background-color: blanchedalmond;
+  box-shadow: 0 0 5px rgb(221, 180, 126);
+  color: burlywood;
+}
+
+.todos {
+  display: flex;
+  width: 47.5%;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(239, 202, 154);
+}
+.remove{
+    background-color:  burlywood;
+}
+
+.todos_heading{
+    font-size:30px ;
+    color:#fff;
+}
+.todos_single {
+  display: flex;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background-color: rgba(255, 235, 205, 0.889);
+  transition: 0.2s;
+}
+
+.todos_single:hover{
+     box-shadow: 0 0 5px rgb(140, 114, 80);
+    transition: scale(1.03);
+}
+
+.todos_single--text {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+}
+.todos_single--text:focus{
+    outline: none;
+}
+
+.icon{
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    width: 90%;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.dragaction{
+  background-color:  rgba(245, 205, 153, 0.905);
+}
+.dragcomp{
+
+  background-color:  rgba(245, 205, 153, 0.905);
+}
+.drag{
+    box-shadow: 0 0 20px rgb(140, 114, 80);
+}
+
+@media(max-width:1100px){
+    .todos{width:45%;}
+}
+
+@media (max-width: 700px) {
+    .input {
+      width: 95%;
+    }
+    .todos {
+      width: 95%;
+      margin-bottom: 10px;
+    
+    }
+    .container{
+        width: 95%;
+        flex-direction: column;
+    }
+    
+  }
